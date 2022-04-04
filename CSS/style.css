@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+@keyframes scrolls {
+    0%   {top: 18px; opacity: 1; height: 4px}
+    95% {top: 5px; opacity: 0; height: 8px}
+  	100% {top: 18px; opacity: 1; height: 4px}
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+}
+
+
+/*STYLING THE NAVIGATION*/
+
+.bg-dark {
+    background-color: #103E0F!important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #ffffff;    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #c8ffc7;
+}
+
+
+.cringle-logo {
+    height: 2.5em;
+}
+
+
+
+
+
+/*STYLING THE HEADINGS*/
+
+.my-h1 {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.063rem;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+h3.my-h3 {
+    color: #b5b5b5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.188rem;
+    line-height: 1.6;
+}
+
+h1.my-h1-3 {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-weight: 500;
+    font-size: 3.125rem;
+    margin-bottom: 40px;
+}
+
+h1.my-h1-4 {
+    color: #73ff6d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.125rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+/*STYLING THE PARAGRAPHS*/
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*STYLING THE BUTTONS*/
+
+a.btn.btn-outline-dark.btn-lg {
+    margin-top: 40px;
+    background: #65ff5f;
+    border: 2px solid #65ff5f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #10400e;
+    border-radius: 2px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+a.btn.btn-outline-dark.btn-lg:hover {
+    background: #49bb45;
+    border: 2px solid #49bb45;
+    
+    
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled).active, .btn-outline-dark:not(:disabled):not(.disabled):active, .show>.btn-outline-dark.dropdown-toggle {
+    color: #10400e;
+    background-color: #49bb45;
+    border-color: #49bb45;
+}
+
+/*STYLING THE HOME SECTION*/
+
+div#home {
+    min-height: 100vh;
+    background: radial-gradient(#65ff5f08 2px, transparent 3px), radial-gradient(#65ff5f05 2px, transparent 3px), #071f06;
+    background-position: 0 0, 20px 20px;
+    background-size: 40px 40px;
+    display: grid;
+    place-items: center;
+    
+}
+
+.hero-image {
+    
+    width: 100%;
+}
+
+.mouse {
+    width: 28px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 14px;
+    margin-top: 4em;
+  }
+
+  .scroller {
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background: #65ff5f;
+    position: relative;
+    top: 10px;
+    left: 10.5px;
+    -webkit-animation: scrolls 1.3s ease-out infinite ; /* Chrome, Safari, Opera */
+    animation: scrolls 1.3s ease-out infinite ; /* Chrome, Safari, Opera */
+  }
+
+
+
+
+/*STYLING THE ABOUT SECTION*/
+
+div#about {
+    min-height: 100vh;
+    background:#edffec;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 40px;
+}
+
+div#about:after {
+   content: '';
+   position: absolute;
+   background: url(/images/water-mark-min.jpg) no-repeat center;
+   width: 100%;
+   height: 100%;
+   background-attachment: fixed;
+   pointer-events: none;
+   opacity: 0.1;
+   
+}
+
+.my-container {
+    z-index: 1;
+}
+
+
+#timer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    color: #1e261e;
+    font-weight: 300;
+    background: #a7b9a6;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+}
+
+
+  #timer span {
+    font-size: 2.25rem;
+    color: #071f06;
+    margin: 0 3px 0 15px;
+    font-weight: 800;
+  }
+  #timer span:first-child {
+    margin-left: 0;
+  }
+
+  h1.my-h1-2 {
+    font-family: 'Poppins', sans-serif;
+    color: #071f06;
+    font-weight: 500;
+    font-size: 3.125rem;
+}
+
+h1.my-h1-2-2 {
+    font-family: 'Poppins', sans-serif;
+    color: #071f06;
+    font-weight: 500;
+    font-size: 3.125rem;
+}
+
+.p-1 {
+    max-width: 80%;
+    margin: 0 auto;
+    color: #384037;
+}
+
+
+a.opensea-link {
+    color: #071f06;
+    transition: all 0.3s;
+    font-weight: 700;
+    box-shadow: 0 2px #071f06;
+    text-decoration: none;
+}
+
+a.opensea-link:hover {
+    color: #055801;
+    box-shadow: 0 2px #055801;
+}
+
+
+
+.row.my-row-1 {
+    margin-top: 40px;
+}
+
+/*STYLING THE ROADMAP SECTION*/
+
+.container-roadmap {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background: radial-gradient(#65ff5f08 2px, transparent 3px), radial-gradient(#65ff5f05 2px, transparent 3px), #071f06;
+    background-position: 0 0, 20px 20px;
+    background-size: 40px 40px;
+  }
+  .timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .timeline ul {
+    list-style: none;
+  }
+  .timeline ul li {
+    padding: 20px;
+    background-color: #0b2e09;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .timeline ul li:last-child {
+    margin-bottom: 0;
+  }
+  .timeline-content h1 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    color: #bfbfbf;
+  }
+  .timeline-content .date {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  b, strong {
+    font-weight: bolder;
+    color: #73ff6d;
+    font-weight: 600;
+}
+
+
+/*STYLING THE COLLECTION SECTION*/
+
+div#collection {
+    min-height: 100vh;
+    background:#e5e5e5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#00000010 2px, transparent 3px), radial-gradient(#00000010 2px, transparent 3px), #e5e5e5;
+    background-position: 0 0, 20px 20px;
+    background-size: 40px 40px;
+    padding: 40px;
+}
+
+a.caption-link {
+    display: flex;
+    justify-content: center;
+    background: #585858;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 20px;
+    transition: all 0.3s;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    
+}
+
+a.caption-link:hover {
+  background: #2e2e2e;
+    
+}
+
+
+/*STYLING THE FAQ SECTION*/
+
+div#faq {
+    min-height: 100vh;
+    background:#071f06;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    
+}
+
+.accordion>.card:not(:last-of-type) {
+    border-bottom: none;
+  
+}
+
+.card {
+    margin-bottom: 10px;
+    border-radius: 10px !important;
+    background: #0b2c0a;
+}
+
+
+button.btn.btn-link.btn-block.text-left.collapsed {
+    color: #d3ffd1;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+button.btn.btn-link.btn-block.text-left {
+    color: #d3ffd1;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.card-body p {
+    color: #b9b9b9;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    margin-left: 0.875rem;
+}
+
+a.social-links-2 {
+    color: #93ff90;
+    text-decoration: none;
+    box-shadow: 0 1px #93ff90;
+    transition: all 0.3s;
+}
+
+a.social-links-2:hover {
+    color: #6cbf6a;
+    box-shadow: 0 1px #6cbf6a;
+    
+}
+
+.card-header {
+    border-bottom: 1px solid #73ff6d0d;
+}
+
+.btn.focus, .btn:focus {
+    
+    box-shadow: 0 0 0 0.2rem rgb(16 56 15);
+}
+
+
+/*STYLING THE FOOTER*/
+
+footer#sticky-footer {
+    background: #1f261f !important;
+}
+
+div#footer {
+    background: #1f261f;
+}
+
+.footer-text{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+small.footer-text-2 {
+    display: block;
+    margin-top: 10px;
+}
+
+.social-links {
+    color: #abbdab;
+    padding: 5px;
+    font-size: 1.125rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links:hover {
+    color: #8eff8e;
+}
+
+img.nft-calendar {
+    width: 6.25rem;
+    filter: brightness(0) invert(1);
+}
+
+a.as-seen-on {
+    color: #65df65 !important;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+a.as-seen-on:hover {
+    color: #ffffff !important;
+  
+}
