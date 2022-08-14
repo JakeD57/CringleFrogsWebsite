@@ -1,5 +1,6 @@
 # CringleFrogsWebsite
-This is a NFT website I designed and coded using bootstrap.
+
+NFT website Design.
 
 
 [Link to Website](https://www.cringlefrogs.com/)
